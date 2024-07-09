@@ -32,9 +32,9 @@ eas build --platform android --local
 
 # References
 
-[Local builds - EXPO](https://docs.expo.dev/build-reference/local-builds/)
-[Docker builds](https://docs.docker.com/reference/cli/docker/image/build/)
-[Docker containers](https://docs.docker.com/reference/cli/docker/container/run/)
-[Copy files from local machine to docker container](https://stackoverflow.com/questions/40313633/how-to-copy-files-from-local-machine-to-docker-container-on-windows)
-[Name docker container](https://docs.docker.com/engine/reference/run/#:~:text=Container%20identification,-You%20can%20identify&text=You%20can%20also%20defined%20a,background%20and%20foreground%20Docker%20containers.)
-[Disable git from eas-cli](https://expo.fyi/eas-vcs-workflow)
+- [Local builds - EXPO](https://docs.expo.dev/build-reference/local-builds/)
+- [Docker builds](https://docs.docker.com/reference/cli/docker/image/build/)
+- [Docker containers](https://docs.docker.com/reference/cli/docker/container/run/)
+- [Copy files from local machine to docker container](https://stackoverflow.com/questions/40313633/how-to-copy-files-from-local-machine-to-docker-container-on-windows)
+- [Name docker container](https://docs.docker.com/engine/reference/run/#:~:text=Container%20identification,-You%20can%20identify&text=You%20can%20also%20defined%20a,background%20and%20foreground%20Docker%20containers.)
+- [Disable git from eas-cli](https://expo.fyi/eas-vcs-workflow)
