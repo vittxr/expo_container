@@ -27,7 +27,7 @@ cd /home/expo_apps/your_app
 eas build --platform android --local
 ```
 
-> !TIP
+> [!TIP]
 > Copy files from you host machine to docker container may be very slow, because it copies bit by bit of the files. Instead of cpy the files, you can clone the github repository and install the dependencies inside docker container.
 
 # References
