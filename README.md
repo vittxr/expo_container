@@ -38,3 +38,4 @@ eas build --platform android --local
 - [Copy files from local machine to docker container](https://stackoverflow.com/questions/40313633/how-to-copy-files-from-local-machine-to-docker-container-on-windows)
 - [Name docker container](https://docs.docker.com/engine/reference/run/#:~:text=Container%20identification,-You%20can%20identify&text=You%20can%20also%20defined%20a,background%20and%20foreground%20Docker%20containers.)
 - [Disable git from eas-cli](https://expo.fyi/eas-vcs-workflow)
+- [Android Studio + flutter in docker](https://github.com/Deadolus/android-studio-docker)
