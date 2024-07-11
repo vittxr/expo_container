@@ -1,8 +1,0 @@
-# Copy files from host machine to docker
-docker cp C:\Trabalhos\Trabalhos\installers_tickets\mobile_app expo_container:/home/expo_apps/
-
-# Enter inside mobile app dir 
-cd /home/expo_apps/mobile_app
-
-# Copy git files from repo
-git clone https://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@github.com/farmpro-code/installers_tickets.git
