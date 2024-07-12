@@ -69,7 +69,6 @@ yarn install
 eas build --platform android --local
 ```
 
-
 # References
 
 - [Local builds - EXPO](https://docs.expo.dev/build-reference/local-builds/)
