@@ -12,63 +12,21 @@ docker build -t expo .
 docker run -it --name expo_container expo 
 ```
 
-# Build expo app 
+# Create expo app 
 
-## Copy the files from your host machine to the container
-
-You should transfer your expo app files inside the container with:
+Inside container CLI, create your first expo app. 
 
 ```bash
-docker cp /path/to/file expo_container:/home/expo_apps/
+npx create-expo-app StickerSmash --template blank
+cd StickerSmash
+npx expo install react-dom react-native-web @expo/metro-runtime
 ```
 
-> [!TIP]
-> Copy files from you host machine to docker container may be very slow, because it copies bit by bit of the files. Instead of copying files, you can clone the github repository and install the dependencies inside docker container.
-
-## Set compile versions in your expo app 
-
-To build the app locally, you need to set some [build properties](https://docs.expo.dev/versions/v49.0.0/sdk/build-properties/). 
-
-1. Install expo-build-properties
-   
-```bash
-npx expo install expo-build-properties
-```
-
-2. set android and ios properties in `app.json`
-
-```json
-{
-  "expo": {
-    "plugins": [
-      [
-        "expo-build-properties",
-        {
-          "android": {
-            "compileSdkVersion": 31,
-            "targetSdkVersion": 31,
-            "buildToolsVersion": "31.0.0"
-          },
-          "ios": {
-            "deploymentTarget": "13.0"
-          }
-        }
-      ]
-    ]
-  }
-}
-```
-
-## Build
-
-Inside container CLI, run the following command to build the expo app:
+Build your app locally using
 
 ```bash
-cd /home/expo_apps/your_app
-yarn install
 eas build --platform android --local
 ```
-
 
 # References
 
@@ -84,3 +42,4 @@ eas build --platform android --local
 - [libvirt-bin package was dropped in 18.10](https://askubuntu.com/a/1089849/1674603)
 - [build-properties - Expo](https://docs.expo.dev/versions/v49.0.0/sdk/build-properties/)
 - [Accept all sdk licenses](https://stackoverflow.com/questions/38096225/automatically-accept-all-sdk-licences)
+- [Create your first app - Expo](https://docs.expo.dev/tutorial/create-your-first-app/)
