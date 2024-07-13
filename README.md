@@ -14,7 +14,7 @@ docker run -it --name expo_container expo
 
 # Create expo app 
 
-Inside container CLI, create your first expo app. 
+Inside container CLI, create your expo app:
 
 ```bash
 npx create-expo-app StickerSmash --template blank
@@ -22,7 +22,7 @@ cd StickerSmash
 npx expo install react-dom react-native-web @expo/metro-runtime
 ```
 
-Build your app locally using
+Build your app locally using:
 
 ```bash
 eas build --platform android --local
