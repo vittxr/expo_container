@@ -1,3 +1,16 @@
+# Summary
+
+Expo does not officially support local EAS builds on Windows:
+
+> On Windows, you can use WSL for local EAS Builds. However, we do not officially test against this platform and do not support Windows for local builds (macOS and Linux are supported).
+
+If you're a Windows developer who wants to run local Expo EAS builds without relying on cloud build credits, this project provides a Docker-based solution that makes it possible.
+
+While Expo's cloud builds are generally the recommended approach, free build quotas can be limiting, especially during active development and testing. 
+
+> [!NOTE]
+> I don't work with expo anymore, so I'm not sure if this is working, but it might be something similar. 
+
 # Docker commands
 
 1. Build the image 
